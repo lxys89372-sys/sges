@@ -1,1 +1,112 @@
 
+{
+  "system": {
+    "name": "User Management System",
+    "version": "1.0",
+    "max_accounts": 5,
+    "default_max_time": 60,
+    "default_max_cons": 2,
+    "time_unit": "minutes"
+  },
+  "admin": {
+    "id": 1,
+    "username": "admin",
+    "password_hash": "ISI_HASH_PASSWORD",
+    "role": "admin",
+    "status": "active",
+    "permissions": {
+      "view_users": true,
+      "create_users": true,
+      "edit_users": true,
+      "delete_users": true,
+      "reset_password": true,
+      "manage_max_time": true,
+      "manage_max_cons": true,
+      "manage_user_status": true,
+      "view_sessions": true,
+      "kick_sessions": true
+    }
+  },
+  "users": [
+    {
+      "id": 2,
+      "username": "user01",
+      "password_hash": "ISI_HASH_PASSWORD",
+      "role": "user",
+      "max_time": 60,
+      "max_cons": 2,
+      "active_cons": 0,
+      "status": "active",
+      "created_at": null,
+      "expired_at": null
+    },
+    {
+      "id": 3,
+      "username": "user02",
+      "password_hash": "ISI_HASH_PASSWORD",
+      "role": "user",
+      "max_time": 60,
+      "max_cons": 2,
+      "active_cons": 0,
+      "status": "active",
+      "created_at": null,
+      "expired_at": null
+    },
+    {
+      "id": 4,
+      "username": "user03",
+      "password_hash": "ISI_HASH_PASSWORD",
+      "role": "user",
+      "max_time": 60,
+      "max_cons": 2,
+      "active_cons": 0,
+      "status": "active",
+      "created_at": null,
+      "expired_at": null
+    },
+    {
+      "id": 5,
+      "username": "user04",
+      "password_hash": "ISI_HASH_PASSWORD",
+      "role": "user",
+      "max_time": 60,
+      "max_cons": 2,
+      "active_cons": 0,
+      "status": "active",
+      "created_at": null,
+      "expired_at": null
+    },
+    {
+      "id": 6,
+      "username": "user05",
+      "password_hash": "ISI_HASH_PASSWORD",
+      "role": "user",
+      "max_time": 60,
+      "max_cons": 2,
+      "active_cons": 0,
+      "status": "active",
+      "created_at": null,
+      "expired_at": null
+    }
+  ],
+  "session_settings": {
+    "enforce_max_time": true,
+    "enforce_max_cons": true,
+    "auto_logout_on_expiry": true,
+    "allow_multiple_devices": true,
+    "track_login_history": true,
+    "admin_can_kick_session": true
+  },
+  "admin_actions": [
+    "create_user",
+    "edit_username",
+    "reset_password",
+    "change_max_time",
+    "change_max_cons",
+    "activate_user",
+    "deactivate_user",
+    "delete_user",
+    "view_active_sessions",
+    "kick_user_session"
+  ]
+}
