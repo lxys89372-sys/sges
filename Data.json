@@ -1,7 +1,7 @@
 {
   "system": {
     "name": "User Management System",
-    "version": "1.0",
+    "version": "1.1",
     "max_accounts": 5,
     "default_max_time": 60,
     "default_max_cons": 2,
@@ -64,6 +64,18 @@
     "enforce_max_cons": true,
     "auto_logout_on_expiry": true,
     "allow_multiple_devices": true,
-    "track_login_history": true
+    "track_login_history": true,
+    "session_expiry": {
+      "mode": "random_on_login",
+      "allowed_minutes": [
+        3,
+        5,
+        10,
+        12
+      ],
+      "hard_limit_minutes": 15,
+      "auto_logout": true,
+      "renew_on_activity": false
+    }
   }
 }
