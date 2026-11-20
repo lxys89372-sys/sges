@@ -1,59 +1,59 @@
 {
   "system": {
     "name": "User Management System",
-    "version": "1.1",
+    "version": "1.2",
     "max_accounts": 5,
-    "default_max_time": 60,
-    "default_max_cons": 2,
-    "time_unit": "minutes"
+    "default_max_time": 86400,
+    "default_max_cons": 50,
+    "time_unit": "second"
   },
   "users": [
     {
       "id": 1,
-      "username": "user01",
-      "password_hash": "ISI_HASH_PASSWORD",
-      "max_time": 60,
-      "max_cons": 2,
+      "username": "spectre",
+      "password_hash": "$2b$12$61eCacB1LBUkO/MvmSk0gOxOecQREkTUntuJBdsLiIYXiGD37v2qO",
+      "max_time": 3600,
+      "max_cons": 10,
       "status": "active",
       "created_at": null,
       "expired_at": null
     },
     {
       "id": 2,
-      "username": "user02",
-      "password_hash": "ISI_HASH_PASSWORD",
-      "max_time": 60,
-      "max_cons": 2,
+      "username": "obsidian",
+      "password_hash": "$2b$12$SDMgi/NGzONRFGRoN9HwPOD5TlEPD0z1DhFJtOjlEhh1Vj5kzm5ra",
+      "max_time": 3600,
+      "max_cons": 10,
       "status": "active",
       "created_at": null,
       "expired_at": null
     },
     {
       "id": 3,
-      "username": "user03",
-      "password_hash": "ISI_HASH_PASSWORD",
-      "max_time": 60,
-      "max_cons": 2,
+      "username": "wraith",
+      "password_hash": "$2b$12$qQHrv3yCfsMxeo33t73j1uwKl610xswkvT9o0WU0zpV2bSXt36.D.",
+      "max_time": 3600,
+      "max_cons": 10,
       "status": "active",
       "created_at": null,
       "expired_at": null
     },
     {
       "id": 4,
-      "username": "user04",
-      "password_hash": "ISI_HASH_PASSWORD",
-      "max_time": 60,
-      "max_cons": 2,
+      "username": "cipher",
+      "password_hash": "$2b$12$dp/LDPc9E7k0XOyF3WeFveovZ7c8PnBZbI.ayzNoxFJZ0uAglPNXS",
+      "max_time": 3600,
+      "max_cons": 10,
       "status": "active",
       "created_at": null,
       "expired_at": null
     },
     {
       "id": 5,
-      "username": "user05",
-      "password_hash": "ISI_HASH_PASSWORD",
-      "max_time": 60,
-      "max_cons": 2,
+      "username": "kestrel",
+      "password_hash": "$2b$12$TfulQu0fU3rV4rUH2TOv0O/22ma33RN3X2Fl60LjLxP6e5B5vH8xi",
+      "max_time": 3600,
+      "max_cons": 10,
       "status": "active",
       "created_at": null,
       "expired_at": null
